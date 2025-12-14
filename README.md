@@ -9,3 +9,5 @@
 之后，编写7scenes_test.py代码（设计了三种读取照片的方式strategy，即linspace,stride,window），通过7scene数据集图像实现我的估计相机位姿、生成点云与评估功能。评估指标包括，点云重建评估指标：accuracy（Acc，准确度），completion（Comp，完整度），normal consistency（NC，法线一致性），completion ratio（完整度比率）；相机位姿评估指标Area Under Curve at 5 degrees（ACU@5，5度阈值下的曲线下面积），Absolute Translation Error（ATE，绝对平移误差），Absolute Rotation Error（绝对旋转误差），Relative Pose Error - Rotation（RPE-rot，相对位姿误差-旋转），Relative Pose Error - Translation（RPE-trans，相对位姿误差-平移）
 
 代码面向其中一个scene的一个seq的图片，通过其中五张图进行点云重建与相机位姿估计，以及重建效果的评估。我现在提供了7scenes_test.py根据chess/seq-01的五张图生成的点云图效果
+
+生成相机位姿我一并上传了
