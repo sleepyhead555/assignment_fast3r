@@ -1,0 +1,7 @@
+ #/root/autodl-tmp/fast3r/fast3r/dust3r/heads/postprocess.py 中
+     原代码有误，vmin与vmax未转换为float，定义了def _to_float(b)函数解决问题
+
+#fast3r/eval/cam_pose_metric.py
+原代码有误，camera_to_rel_deg函数中，pred_cameras_c2w与gt_cameras_c2w的shape不一致，导致计算错误；
+现在现在把pair_idx_i1和pair_idx_i2都搬到device，避免GPU/CPU混用
+
