@@ -1,0 +1,21 @@
+{
+  "scene": "chess",
+  "sequence": "seq-01",
+  "filelist": [
+    "/root/autodl-tmp/OpenDataLab___7-Scenes/raw/chess/seq-01/frame-000000.color.png",
+    "/root/autodl-tmp/OpenDataLab___7-Scenes/raw/chess/seq-01/frame-000100.color.png",
+    "/root/autodl-tmp/OpenDataLab___7-Scenes/raw/chess/seq-01/frame-000200.color.png",
+    "/root/autodl-tmp/OpenDataLab___7-Scenes/raw/chess/seq-01/frame-000300.color.png",
+    "/root/autodl-tmp/OpenDataLab___7-Scenes/raw/chess/seq-01/frame-000400.color.png"
+  ],
+  "gt_pose_path": "/root/autodl-tmp/output/gt_camera_poses.npy",
+  "gt_points_path": "/root/autodl-tmp/output/gt_points.npy",
+  "gt_normals_path": "/root/autodl-tmp/output/gt_normals.npy",
+  "estimated_focals": [
+    403.65216064453125,
+    403.65216064453125,
+    403.65216064453125,
+    403.65216064453125,
+    403.65216064453125
+  ]
+}
