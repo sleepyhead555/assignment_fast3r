@@ -1,7 +1,11 @@
- #/root/autodl-tmp/fast3r/fast3r/dust3r/heads/postprocess.py 中
-     原代码有误，vmin与vmax未转换为float，定义了def _to_float(b)函数解决问题
-
-#fast3r/eval/cam_pose_metric.py
-原代码有误，camera_to_rel_deg函数中，pred_cameras_c2w与gt_cameras_c2w的shape不一致，导致计算错误；
-现在现在把pair_idx_i1和pair_idx_i2都搬到device，避免GPU/CPU混用
+我新建的文件/文件夹
+   在一级的fast3r目录下新建文件夹/root/autodl-tmp/fast3r/Fast3R_ViT_Large_512，存放权重及其配置文件
+   在与一级fast3r同级的目录有文件夹/root/autodl-tmp/OpenDataLab___7-Scenes，为下载的7scenes数据集，由我通过链接https://opendatalab.org.cn/OpenDataLab/7-Scenes下载
+   编写的代码：(1)run_from_video.py  (2)7scenes_test.final.py
+   存储7scenes_test.final.py运行结果（相机位姿、生成点云、评估指标）的文件夹/root/autodl-tmp/output
+官方文档中存在一些小纰漏，修改如下：
+   #/root/autodl-tmp/fast3r/fast3r/dust3r/heads/postprocess.py 中
+        原代码有误，vmin与vmax未转换为float，定义了def _to_float(b)函数解决问题
+   #/root/autodl-tmp/fast3r/fast3r/eval/recon_metric.py
+        原代码有误，camera_to_rel_deg函数中，pred_cameras_c2w与gt_cameras_c2w的shape不一致，导致计算错误；现在把pair_idx_i1和pair_idx_i2都搬到device，避免GPU/CPU混用
 
