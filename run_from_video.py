@@ -21,10 +21,10 @@ from fast3r.models.fast3r import Fast3R
 from fast3r.models.multiview_dust3r_module import MultiViewDUSt3RLitModule
 
 # ---------------------------
-# 配置（按需修改）
+# 配置
 # ---------------------------
 VIDEO_PATH = "/root/autodl-tmp/fast3r/demo_examples/kitchen/family/Family.mp4"   # 要抽帧的视频路径
-WEIGHT_FILE = "/root/autodl-tmp/fast3r/Fast3R_ViT_Large_512/model.safetensors"  # 你下载好的 safetensors 权重的完整路径
+WEIGHT_FILE = "/root/autodl-tmp/fast3r/Fast3R_ViT_Large_512/model.safetensors"  # 下载好的 safetensors 权重的完整路径
 FRAME_INTERVAL = 30   # 每隔多少帧抽一帧；例如 30 表示每秒若视频30fps则取1帧/s
 MAX_FRAMES = 3        # 最多用多少张视角（模型原来是三张，现在可用多张）；注意显存
 IMG_SIZE = 512        # load_images 的 size 参数
